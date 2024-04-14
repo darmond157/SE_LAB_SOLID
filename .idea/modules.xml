@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/SE_Lab_SOLID.iml" filepath="$PROJECT_DIR$/.idea/SE_Lab_SOLID.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Step_1_Non_SOLID/Step_1_Non_SOLID.iml" filepath="$PROJECT_DIR$/Step_1_Non_SOLID/Step_1_Non_SOLID.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Step_3_With_SOLID/Step_3_With_SOLID.iml" filepath="$PROJECT_DIR$/Step_3_With_SOLID/Step_3_With_SOLID.iml" />
+    </modules>
+  </component>
+</project>
