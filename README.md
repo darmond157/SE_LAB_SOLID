@@ -151,7 +151,7 @@
 <p><strong>موارد تحقق</strong></p>
 </td>
 <td width="454">
-<p>کلاس‌هایی که از Message ارث بری می‌کنند شامل EmailMessage و SmsMessage و TelegramMessage همگی یک وظیفه واحد دارند و آن نگهداری از اطلاعات پیام است. همجنین کلاس‌های EmailMessageService و SmsMessageService و TelegramMessageService نیز بک وظیفه دارند که آن ارسال اطلاعات پیام است.</p>
+<p>کلاس‌هایی که از Message ارث بری می‌کنند شامل EmailMessage و SmsMessage و TelegramMessage همگی یک وظیفه واحد دارند و آن نگهداری از اطلاعات پیام است.</p>
 </td>
 </tr>
 <tr>
@@ -159,7 +159,18 @@
 <p><strong>موارد نقض</strong></p>
 </td>
 <td>
-<p>&nbsp;</p>
+<p>کارآیی اصلی برنامه شامل گرفتن ورودی و ساخت و ارسال پیام تنها در یک تابع main در کلاس Main قرار داده شده است.
+<br/>
+<br/>
+در کلاس EmailMessageService توابع sendTelegramMessage و sendSmsMessage پیاده سازی شده است که ربطی به وظیفه اصلی کلاس ندارد.
+<br/>
+<br/>
+در کلاس SmsMessageService توابع sendEmailMessage و sendTelegramMessage پیاده سازی شده است که ربطی به وظیفه اصلی کلاس ندارد.
+<br/>
+<br/>
+در کلاس TelegramMessageService توابع sendSmsMessage و sendEmailMessage پیاده سازی شده است که ربطی به وظیفه اصلی کلاس ندارد.
+</p>
+
 </td>
 </tr>
 <tr>
@@ -219,7 +230,17 @@
 <p><strong>موارد نقض</strong></p>
 </td>
 <td>
-<p>کلاس‌های EmailMessageService و SmsMessageService و TelegramMessageService از واسط به نام MessageService استفاده می‌کنند و هر کدام توابعی را پیاده سازی می‌کنند که از آنها استفاده نمی‌کنند. برای مثال کلاس EmailMessageService باید توابع sendSmsMessage و sendEmailMessage را پیاده سازی کند در حالی که استفاده‌ای از آنها نمی‌کند.</p>
+<p>کلاس‌های EmailMessageService و SmsMessageService و TelegramMessageService از واسط به نام MessageService استفاده می‌کنند و هر کدام توابعی را پیاده سازی می‌کنند که از آنها استفاده نمی‌کنند. برای مثال کلاس EmailMessageService باید توابع sendSmsMessage و sendEmailMessage را پیاده سازی کند در حالی که استفاده‌ای از آنها نمی‌کند.
+<br/>
+<br/>
+در کلاس EmailMessageService توابع sendTelegramMessage و sendSmsMessage پیاده سازی شده است که استفاده‌ای از آنها نمی‌کند.
+<br/>
+<br/>
+در کلاس SmsMessageService توابع sendEmailMessage و sendTelegramMessage پیاده سازی شده است که استفاده‌ای از آنها نمی‌کند.
+<br/>
+<br/>
+در کلاس TelegramMessageService توابع sendSmsMessage و sendEmailMessage پیاده سازی شده است که استفاده‌ای از آنها نمی‌کند.
+</p>
 </td>
 </tr>
 <tr>
