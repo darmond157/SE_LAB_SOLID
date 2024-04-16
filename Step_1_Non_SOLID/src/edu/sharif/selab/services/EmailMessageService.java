@@ -15,7 +15,7 @@ public class EmailMessageService implements MessageService{
     @Override
     public void sendEmailMessage(EmailMessage emailMessage) {
         if(validateEmailAddress(emailMessage.getSourceEmailAddress()) && validateEmailAddress(emailMessage.getTargetEmailAddress())){
-            System.out.println("Sending a SMS from " + emailMessage.getSourceEmailAddress() + " to " + emailMessage.getTargetEmailAddress() + " with content : " + emailMessage.getContent());
+            System.out.println("Sending a Email from " + emailMessage.getSourceEmailAddress() + " to " + emailMessage.getTargetEmailAddress() + " with content : " + emailMessage.getContent());
         }else{
             throw new IllegalArgumentException("Email Address is Not Correct!");
         }

@@ -48,13 +48,13 @@ public class Main {
                     break;
                 case 2:
                     EmailMessage emailMessage = new EmailMessage();
-                    System.out.print("Enter source phone : ");
+                    System.out.print("Enter source Email : ");
                     source = scanner.next();
                     emailMessage.setSourceEmailAddress(source);
-                    System.out.print("Enter target phone : ");
+                    System.out.print("Enter target Email : ");
                     target = scanner.next();
                     emailMessage.setTargetEmailAddress(target);
-                    System.out.println("Write Your Message : ");
+                    System.out.println("Write Your Email : ");
                     content = scanner.next();
                     emailMessage.setContent(content);
                     message = emailMessage;
