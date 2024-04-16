@@ -265,3 +265,67 @@
 </tr>
 </tbody>
 </table>
+
+<table dir='rtl'>
+<tbody>
+<tr>
+<td width="168">
+<p><strong>اصل مربوطه (از اصول </strong><strong>SOLID</strong><strong>)</strong></p>
+</td>
+<td width="246">
+<p><strong>علت نقض</strong></p>
+</td>
+<td width="284">
+<p><strong>راه حل پیشنهادی</strong></p>
+</td>
+</tr>
+<tr>
+<td width="168">
+<p>Single Responsibility</p>
+</td>
+<td width="246">
+<p>&nbsp;</p>
+</td>
+<td width="284">
+<p>استفاده از سرویس های مربوطه در تابع main و سپردن کارهای گرفتن و ساخت و ارسال پیام به آنها
+حذف توابع نامربوط از کلاس های نام برده و تغییر interface 
+</p>
+</td>
+</tr>
+<tr>
+<td width="168">
+<p>Open-Close Principle (OCP)</p>
+</td>
+<td width="246">
+<p>&nbsp;</p>
+</td>
+<td width="284">
+<p>تغییر واسط به گونه ای که نیاز به تعریف یک تابع جدید در آن نباشیم و یک تابع داشته باشیم که برای همه قابل پیاده سازی باشد
+استفاده از سرویس ها در کلاس main به جای دریافت و چاپ مستقیم
+</p>
+</td>
+</tr>
+<tr>
+<td width="168">
+<p>Interface Segregation Principle</p>
+</td>
+<td width="246">
+<p>&nbsp;</p>
+</td>
+<td width="284">
+<p>تغییر در واسط MessageService که به تبع آن توابع بلااستفاده را حذف خواهیم کرد و اصلاح صورت میگیرد.</p>
+</td>
+</tr>
+<tr>
+<td width="168">
+<p>Dependency Inversion Principle</p>
+</td>
+<td width="246">
+<p>&nbsp;</p>
+</td>
+<td width="284">
+<p>استفاده از واسط ها و توابع آن ها به جای استفاده مستقیم در main باعث بهبود این اصل میشود</p>
+</td>
+</tr>
+</tbody>
+</table>
